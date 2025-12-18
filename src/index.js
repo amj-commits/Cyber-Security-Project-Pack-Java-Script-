@@ -24,7 +24,7 @@ function menu() {
         // Option 1: Analyze password strength
         if (choice === '1') {
             rl.question("Enter password to analyze: ", (pw) => {
-                const result = analyzePassword(pw); // Evaluate password
+                const result = analyzePassword(pw); // Check password
                 console.log("\nPassword Score:", result.score);
                 console.log("Feedback:", result.feedback);
                 menu(); // Return to menu
@@ -52,5 +52,5 @@ function menu() {
     });
 }
 
-// Start the program
+// Start program
 menu();
